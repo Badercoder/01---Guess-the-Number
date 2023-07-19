@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+:root {
+  --font-size: 1.35rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  transition: background 0.3s;
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 25rem;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  display: grid;
+  height: 30rem;
+  color: #eee;
+}
+
+.grid__3x1 {
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin-inline: auto;
+  margin-top: 40%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  margin-top: 5rem;
+  font-size: var(--font-size);
+  width: 30rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  min-width: 30rem;
+  max-width: 50rem;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  line-height: 4rem;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: all 0.2s;
+}
+
+.hover {
+  position: absolute;
+  background: white;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: background 0.1s;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hover:hover {
+  background: #222;
+}
+
+.between {
+  font-size: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 1.35rem;
+  font-family: inherit;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 3px solid #222;
+}
+
+.again {
+  margin-inline: auto;
+  width: 14rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 3rem;
+  padding: 1.5rem;
+  width: 13rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+  
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.btn:active {
+  background: #222;
+  color: #eee;
+  border: 3px solid #eee;
+}
+
+.message, .label-score, .label-highscore {
+  font-size: var(--font-size);
+  margin-bottom: 2rem;
+}
+
+.reset {
+  width: 13rem;
+  background: rgb(255, 66, 0);
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  transition: all 0.2s;
+}
+
+.reset:hover {
+  color: rgb(255, 66, 0);
+}

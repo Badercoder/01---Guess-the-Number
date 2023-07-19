@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess My Number!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button class="btn reset">Reset</button>
+    <p class="between">(Choose from 1 to 20)</p>
+    <h1>Guess The Hidden Number!</h1>
+    <div class="number">?</div>
+    <p class="hover"></p>
+  </header>
+
+  <main class="grid__3x1">
+    <section class="left">
+      <input type="number" class="guess" />
+      <button class="btn check">Check!</button>
+    </section>
+
+    <section class="right">
+      <p class="message">🎮 Start guessing...</p>
+      <p class="label-score">💯 Score:
+        <span class="score"></span>
+      </p>
+      <p class="label-highscore">🥇 Highest Score:
+        <span class="highestScore">0</span>
+      </p>
+    </section>
+
+    <button class="btn again">Again</button>
+  </main>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
